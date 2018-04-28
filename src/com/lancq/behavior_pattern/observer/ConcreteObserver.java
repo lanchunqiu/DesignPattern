@@ -1,4 +1,4 @@
-package com.lancq.behavior_pattern.Observer;
+package com.lancq.behavior_pattern.observer;
 
 /**
  * @Author lancq

@@ -1,4 +1,4 @@
-package com.lancq.structure_pattern.adapter;
+package com.lancq.structure_pattern.adapter.objectadapter;
 
 /**
  * @Author lancq

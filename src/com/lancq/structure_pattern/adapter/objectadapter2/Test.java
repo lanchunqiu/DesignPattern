@@ -1,4 +1,4 @@
-package com.lancq.structure_pattern.adapter;
+package com.lancq.structure_pattern.adapter.objectadapter2;
 
 /**
  * @Author lancq
@@ -10,14 +10,9 @@ public class Test {
 
     public static void main(String[] args) {
         //客户基本请求
-        Target target = new Target();
-        target.request();
-
+        Target target = new Adapter();
         System.out.println("------开始适配------");
-
         //客户的特殊请求，需要调用Adapter的方法
-
-        target = new Adapter();
         target.request();
     }
 

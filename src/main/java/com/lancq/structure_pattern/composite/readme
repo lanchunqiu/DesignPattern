@@ -1,0 +1,6 @@
+组合模式
+特点：执行组合对象时如同执行其元素对象
+
+关系：组合对象和元素对象具有相同类型
+
+举例：EL中的CompositeELResolver、SpringCache、SpringWebMVC中的WebConfigurerComposite

@@ -1,0 +1,6 @@
+享元模式
+特定：共享对象的状态，减少重复创建
+
+关系：享元对象缓存对象共享实体
+
+举例：Integer缓存、String intern、ThreadLocal

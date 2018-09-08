@@ -1,0 +1,6 @@
+门面模式
+特点：简化接口，聚合子系统实现
+
+关系：门面接口和子系统接口没有层次管理，自动组合实现
+
+举例：Tomcat的RequestFacade、Spring的DispatcherServlet

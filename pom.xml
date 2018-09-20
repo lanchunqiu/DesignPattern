@@ -20,6 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
+        <spring-vserion>3.2.4.RELEASE</spring-vserion>
     </properties>
 
     <dependencies>
@@ -41,6 +42,12 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring-vserion}</version>
+        </dependency>
+        
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>

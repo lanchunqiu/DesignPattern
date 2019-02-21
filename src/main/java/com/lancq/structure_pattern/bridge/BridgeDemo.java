@@ -7,6 +7,7 @@ package com.lancq.structure_pattern.bridge;
  **/
 public class BridgeDemo {
     public static void main(String[] args) {
+
         ScanBuyService scanBuyService = new ScanBuyService() {
             @Override
             public void buy() {
@@ -31,6 +32,9 @@ public class BridgeDemo {
 
     }
 
+    /**
+     * 抽象化角色
+     */
     interface ScanService{
 
         void scanBuy();
@@ -38,10 +42,15 @@ public class BridgeDemo {
         void scanLogin();
     }
 
+    /**
+     * 扩展抽象化角色
+     */
     interface ScanBuyService{
         void buy();
     }
-
+    /**
+     * 扩展抽象化角色
+     */
     interface ScanLoginService{
         void login();
     }

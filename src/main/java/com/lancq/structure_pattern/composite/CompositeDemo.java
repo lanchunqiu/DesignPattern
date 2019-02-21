@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * @Author lancq
- * @Description
+ * @Description 安全组合模式
  * @Date 2018/9/8
  **/
 public class CompositeDemo {

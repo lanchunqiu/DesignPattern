@@ -5,7 +5,7 @@ package com.lancq.structure_pattern.decorator;
  * @Description 装饰器类
  * @Date 2018/4/28
  **/
-public class Decorator extends Component{
+public class Decorator implements Component{
     protected Component component;
 
     public void setComponent(Component component) {

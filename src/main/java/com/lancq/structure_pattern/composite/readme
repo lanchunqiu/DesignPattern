@@ -3,4 +3,4 @@
 
 关系：组合对象和元素对象具有相同类型
 
-举例：EL中的CompositeELResolver、SpringCache、SpringWebMVC中的WebConfigurerComposite
+举例：EL中的CompositeELResolver、SpringCache、SpringWebMVC中的WebMvcConfigurerComposite

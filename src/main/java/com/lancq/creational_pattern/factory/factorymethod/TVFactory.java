@@ -5,5 +5,5 @@ package com.lancq.creational_pattern.factory.factorymethod;
  * @Date 2018/4/25
  **/
 public interface TVFactory {
-	public TV produceTV();
+	TV produceTV();
 }

@@ -4,16 +4,16 @@ import java.io.*;
 
 /**
  * @Author lancq
- * @Description
+ * @Description 原型类
  * @Date 2018/4/26
  **/
-public class Robot implements Cloneable,Serializable{
+public class RobotPrototype implements Cloneable,Serializable{
     private long rid;//机器人序列号，每个机器人序列号均不相同
     private CPU cpu;//使用的CPU，每个机器人的CPU均不相同
     private String birthday;//生产日期
     private String factory;//生产工厂
 
-    public Robot(long rid, String birthday, String factory){
+    public RobotPrototype(long rid, String birthday, String factory){
         this.rid = rid;
         this.birthday = birthday;
         this.factory = factory;
@@ -74,7 +74,7 @@ public class Robot implements Cloneable,Serializable{
 
             ByteArrayInputStream bis = new ByteArrayInputStream(bos.toByteArray());
             ObjectInputStream ois = new ObjectInputStream(bis);
-            Robot robot = (Robot) ois.readObject();
+            RobotPrototype robot = (RobotPrototype) ois.readObject();
             robot.setCpu(System.currentTimeMillis());
             robot.setRid(System.currentTimeMillis() + robot.cpu.hashCode());
             return robot;

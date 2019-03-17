@@ -10,12 +10,12 @@ import java.util.ArrayList;
 public class ConcreteSubject extends Subject{
     private String subjectName;
     private String state;
-    //记录观察者列表
-    private ArrayList<Observer> observers = new ArrayList<Observer>();
+
 
     public ConcreteSubject(String subjectName){
         this.subjectName = subjectName;
     }
+
     public String getSubjectName() {
         return subjectName;
     }
@@ -33,14 +33,7 @@ public class ConcreteSubject extends Subject{
         this.notifyObserver();
         System.out.println();
     }
-    @Override
-    public void add(Observer observer){
-        observers.add(observer);
-    }
-    @Override
-    public void remove(Observer observer){
-        observers.remove(observer);
-    }
+
     @Override
     public void notifyObserver(){
         for(int i = 0; i < observers.size(); i++){

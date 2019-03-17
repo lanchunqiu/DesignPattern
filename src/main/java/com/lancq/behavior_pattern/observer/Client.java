@@ -5,7 +5,7 @@ package com.lancq.behavior_pattern.observer;
  * @Description
  * @Date 2018/4/28
  **/
-public class Test {
+public class Client {
     public static void main(String[] args) {
         ConcreteSubject shenzhouX = new ConcreteSubject("神舟10号飞船");
         shenzhouX.add(new ConcreteObserver("远望1号观测船",shenzhouX));
